@@ -3,8 +3,8 @@ import './App.css'
 
 function App() {
   const [length,setLength]=useState(6);
-  const [numberAllowed,setNumberAllowed] = useState();
-  const [charAllowed,setCharAllowed] = useState();
+  const [numberAllowed, setNumberAllowed] = useState(false);
+const [charAllowed, setCharAllowed] = useState(false);
   const [password,setPassword] = useState();
 
   const passwordRef = useRef(null);
@@ -64,7 +64,7 @@ function App() {
             name=""
             id="length"
             />
-          <label for="length">Length {length}</label>
+          <label htmlFor="length">Length {length}</label>
           </div>
 
           <div className='tag'>
@@ -76,7 +76,7 @@ function App() {
             }}
             id="number"
           />
-          <label for='number'>Numbers</label>
+          <label htmlFor="number">Numbers</label>
           </div>
 
           <div className='tag'>
@@ -88,7 +88,7 @@ function App() {
             }}
             id="char"
           />
-          <label for='char'>Characters</label>
+          <label htmlFor="char">Characters</label>
            </div>
           
          

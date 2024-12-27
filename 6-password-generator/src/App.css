@@ -21,3 +21,15 @@
   border-radius: 10px;
   gap: 10px;
 }
+
+.password-text input{
+padding: 10px;
+}
+
+.password-text input{
+flex:5;
+}
+
+.password-text button{
+flex:1;
+}
