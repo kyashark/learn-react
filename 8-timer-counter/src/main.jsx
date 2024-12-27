@@ -6,7 +6,6 @@ import TimerCounter from './TimerCounter.jsx'
 
 createRoot(document.getElementById('root')).render(
 
-    // <App />
-    <TimerCounter/>
+    <App />
 
 )
