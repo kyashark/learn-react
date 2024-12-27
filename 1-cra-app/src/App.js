@@ -2,7 +2,7 @@
 
 function App() {
   return (
-<h1>CRA React App</h1>
+<h1>Create React App</h1>
   );
 }
 

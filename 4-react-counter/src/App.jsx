@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import './App.css'
+import './index.css'
 
-function HookuseState() {
- 
+function App() {
   const  [counter,setCounter] = useState(0);
 
   const increment =()=>{
@@ -14,7 +15,7 @@ function HookuseState() {
 
   return (
     <>
-      <div>      
+      <div className='container'>      
       <h2>React Hook useState</h2>
       <h1>Counter</h1>
       <div className="card">
@@ -27,6 +28,6 @@ function HookuseState() {
      </div>
     </>
   )
-} 
+}
 
-export default HookuseState;
+export default App

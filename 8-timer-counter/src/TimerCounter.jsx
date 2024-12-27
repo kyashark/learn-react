@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-function HooksuseEffect(){
-
-     // State to manage the counter and whether to show a message
-     const [count,setCount] = useState(0);
+const TimerCounter = () => {
+const [count,setCount] = useState(0);
      const [showMessage,setShowMessage] = useState(false);
  
      //  1. No dependency array: Runs after every render
@@ -27,7 +25,7 @@ function HooksuseEffect(){
     useEffect(() => {
         const interval = setInterval(() => {
         setCount((prevCount) => prevCount + 1);
-    }, 1000);
+    }, 500);
 
     // Cleanup function: Stops the interval when the component unmounts
     return () => {
@@ -45,9 +43,6 @@ function HooksuseEffect(){
          {showMessage && <p>The message is now visible!</p>}
     </div>
     )
-}
-   
-export default HooksuseEffect;
+};
 
-
-
+export default TimerCounter;
