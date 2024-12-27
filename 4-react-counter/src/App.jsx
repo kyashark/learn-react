@@ -18,7 +18,7 @@ function App() {
       <div className='container'>      
       <h2>React Hook useState</h2>
       <h1>Counter</h1>
-      <div className="card">
+      <div className="section">
         <h3>Counter Value: {counter}</h3>
         <button onClick={increment}>Increase</button>
         {"  "}
